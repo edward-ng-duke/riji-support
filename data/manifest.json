@@ -1,0 +1,50 @@
+{
+  "published_on": "2026-11-04",
+  "name": "日拾离线地名衍生数据库",
+  "license": "ODbL-1.0",
+  "attributions": [
+    "© OpenStreetMap contributors; geoBoundaries, William & Mary geoLab and contributors; Lee Beryman",
+    "© GeoNames and contributors, CC BY 4.0",
+    "geoBoundaries CHN ADM1 source metadata states Public Domain, sourced from Wikimedia Commons"
+  ],
+  "sources": [
+    {
+      "name": "geoBoundaries CHN ADM3",
+      "revision": "9469f09",
+      "boundaryID": "CHN-ADM3-62558664",
+      "license": "ODbL-1.0",
+      "url": "https://github.com/wmgeolab/geoBoundaries/tree/9469f09/releaseData/gbOpen/CHN/ADM3"
+    },
+    {
+      "name": "geoBoundaries CHN ADM1",
+      "revision": "9469f09",
+      "boundaryID": "CHN-ADM1-43563684",
+      "license": "Public Domain according to upstream metadata",
+      "url": "https://github.com/wmgeolab/geoBoundaries/tree/9469f09/releaseData/gbOpen/CHN/ADM1"
+    },
+    {
+      "name": "GeoNames CN.zip",
+      "license": "CC-BY-4.0",
+      "url": "https://download.geonames.org/export/dump/CN.zip",
+      "original_snapshot_date": "not recorded in original build"
+    }
+  ],
+  "modifications": [
+    "Polygon simplification with Douglas-Peucker tolerance 0.003 degrees",
+    "Chinese administrative-name matching and selection using GeoNames, with province fallback",
+    "Encoding to RJPL version 1 binary, little endian float32 coordinates",
+    "Deriving administrative name whitelist from the encoded database, omitting boundaries and coordinates"
+  ],
+  "files": [
+    {
+      "path": "administrative-places.json",
+      "bytes": 134820,
+      "sha256": "660003a3eccc303fd2f8ad369ee34a69bb0b056d79920cd2354cd02a4b361099"
+    },
+    {
+      "path": "places-cn.bin",
+      "bytes": 3079823,
+      "sha256": "169ce17cf4a9cc11126fccc243cfef825c5caab0cb0152253fccd22794924fe1"
+    }
+  ]
+}

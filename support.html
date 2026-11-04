@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="日拾官方支持联系方式，以及录音、Apple Watch 同步、AI、备份与删除的常见问题。">
+  <meta name="theme-color" content="#f5f3ec">
+  <title>使用支持 · 日拾</title>
+  <link rel="canonical" href="https://edward-ng-duke.github.io/riji-support/support.html">
+  <link rel="icon" href="AppIcon.png" type="image/png">
+  <link rel="apple-touch-icon" href="AppIcon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="日拾首页"><img src="AppIcon.png" width="44" height="44" alt=""><span>日拾</span></a>
+    <nav aria-label="主导航"><a href="index.html">日拾</a><a href="support.html" aria-current="page">使用支持</a><a href="privacy.html">隐私政策</a><a href="terms.html">服务条款</a></nav>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <header class="page-intro"><p class="eyebrow">Support / 使用支持</p><h1>把问题，慢慢说清。</h1><p class="lead">从录音、同步到找回记录，这里有常见问题与直接联系开发者的方式。</p></header>
+    <section class="contact-card" aria-labelledby="email-title"><div><p class="eyebrow">联系开发者 WU ZE</p><h2 id="email-title">邮件支持</h2><p>应用问题、反馈、隐私及数据处理请求，都可以通过这个邮箱联系。</p><a class="email-link" href="mailto:wz569366391@gmail.com">wz569366391@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-guide"><h3>请附上这些信息</h3><ul><li>iPhone 型号、iOS 版本与日拾版本</li><li>涉及手表时，附 Apple Watch 型号与 watchOS 版本</li><li>问题发生的本地日期、时间与操作步骤</li><li>经过检查的截图或应用导出的调试信息</li></ul><p>发送前请遮盖 API Key、录音文字及其他私人信息。</p></div></section>
+    <section class="section faq" aria-labelledby="faq-title"><div class="section-heading"><p class="eyebrow">常见问题</p><h2 id="faq-title">从这里开始。</h2></div>
+      <details><summary>没有 Apple Watch 可以使用吗？</summary><div><p>可以。iPhone 可以独立录音、转写、回看、搜索与导出。Apple Watch 提供可选的手表采集与标记功能，手表录音交付到配对的 iPhone 后处理。</p></div></details>
+      <details><summary>没有连接 AI 或没有网络，可以做什么？</summary><div><p>录音、设备端转写、时间线浏览、保留原音的回放、关键词与语义搜索、导出可独立使用。部分系统资源首次使用时可能需要联网下载。</p><p>小时重点、每日回顾和 AI 问答需要你连接自己的 API 服务，或在受支持机型下载本机模型。你可以在首次引导中先不用 AI。</p></div></details>
+      <details><summary>如何连接自己的 AI 服务？</summary><div><p>进入「设置 → AI 设置」，选择自定义 API 与服务商，填写你自己的 API Key，阅读发送说明并同意，再检查连接并保存。自定义接口还需要填写完整地址与模型名。</p><p>连接后，当次所需文字直接发送给你选择的服务商，其费用、数据保留和账户限制依该服务商规则执行。停止自动调用可关闭自动生成与每日回顾，停止后续发送可删除对应 API Key。</p></div></details>
+      <details><summary>为什么没有本机模型选项，或模型暂时不能运行？</summary><div><p>本机模型受设备物理内存限制，目前面向 8GB 及以上机型。下载需要 Wi-Fi 和足够空间，请保持日拾在前台。低电量模式、过热或离开前台时，本机推理会暂停。</p><p>模型结果可能遗漏或出错。请回到转写与原音核对重要事实。</p></div></details>
+      <details><summary>录音为什么会中断？</summary><div><p>来电、音频被其他应用占用、低电量、可用存储或系统调度都可能影响录音。日拾会标记录音中断与缺口。请检查麦克风权限、存储空间及录音页面提示，再开启新的录音。</p><p>应用不承诺连续 24 小时不中断录音。</p></div></details>
+      <details><summary>手表录音为什么还没有出现在手机上？</summary><div><p>配对传输由系统安排，后台交付可能延迟。请让 iPhone 与 Apple Watch 保持正常连接，在两端打开日拾，查看手表同步状态，并使用页面上的同步或重试入口。</p><p>如需反馈，附两端状态与问题时间。请先保留仍在手表上的录音与排队记录。</p></div></details>
+      <details><summary>换手机或丢失设备后，如何找回档案？</summary><div><p>档案默认排除在 iCloud 与系统设备备份之外。请提前在「设置 → 导出与备份」生成并保存加密恢复包，妥善保管密码。</p><p>在新设备上选择恢复包进行合并恢复，之后重新填写 API Key、下载所需模型，并与手表重新握手。开发者没有你的档案副本或恢复包密码。</p></div></details>
+      <details><summary>如何删除记录及发给 AI 的内容？</summary><div><p>应用内可以删除音频、某段记录、某个小时或某一天及其派生内容，也可删除服务商 API Key。你另行保存的导出文件需在保存位置删除。</p><p>本机删除无法撤回第三方 AI 已收到的请求。如需删除服务商保存的数据，请按该服务的隐私政策提出请求。</p></div></details>
+    </section>
+    <aside class="note"><p>数据处理的详细说明见 <a href="privacy.html">隐私政策</a>。组件与离线地名数据的署名可在应用「设置 → 开源许可」及本网站的 <a href="data/">数据来源与许可</a> 页面查看。</p></aside>
+  </main>
+  <footer class="site-footer wrap">
+    <div><span class="footer-brand">日拾</span><p>把说过的话，留给以后的自己。</p></div>
+    <div class="footer-links"><a href="support.html">联系支持</a><a href="privacy.html">隐私政策</a><a href="terms.html">服务条款</a><a href="data/">数据来源与许可</a></div>
+    <p class="copyright">© 2026 日拾开发者 WU ZE · <a href="mailto:wz569366391@gmail.com">wz569366391@gmail.com</a></p>
+  </footer>
+</body>
+</html>
